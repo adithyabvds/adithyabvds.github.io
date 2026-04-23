@@ -1,26 +1,29 @@
 {
   "startup": {
-    "name": "SparkLabs",
-    "overview": "A specialized research lab building open-source developer tools for data scientists and ML engineers."
+    "name": "Spark Labs & Technologies",
+    "status": "In Progress",
+    "role": "Founder & Lead Developer",
+    "overview": "Building a multi-product technology startup focused on developing AI-powered solutions, MSME tools, and consumer applications. The platform aims to solve real-world business and user problems through scalable software, including AI chatbots, automation systems, and SaaS products. Currently in development with multiple products being designed for deployment across industries.",
+    "outcome": "Multi-product pipeline under development, AI chatbot systems in progress, MSME solutions being prototyped.",
+    "tech": ["TypeScript", "PostgreSQL", "Vite", "Tailwind CSS", "JSON"],
+    "stats": {
+      "apps": 1,
+      "live": 0,
+      "prototype": 1
+    }
   },
   "products": [
     {
-      "name": "DataSynth",
-      "tags": ["Open Source", "Python"],
-      "description": "A synthetic data generation library for privacy-preserving ML training.",
-      "github": "https://github.com",
+      "name": "AcuLedger",
+      "tags": ["MSME", "SaaS", "Analytics"],
+      "description": "AcuLedger is a business management and analytics platform designed for MSMEs to manage customers, inventory, invoices, and expenses in a centralized system. It provides real-time insights into revenue, outstanding payments, and operational performance through an interactive dashboard, enabling data-driven decision-making and streamlined business workflows.",
+      "github": "https://github.com/adithyabvds",
+      "live": "",
       "showGithub": true,
-      "public": true,
-      "status": "launched"
-    },
-    {
-      "name": "ModelOps",
-      "tags": ["SaaS", "React"],
-      "description": "Lightweight model monitoring dashboard for tracking drift over time.",
       "showLive": true,
-      "live": "https://example.com",
       "public": true,
-      "status": "beta"
+      "launched": false,
+      "status": "prototype"
     }
   ]
 }

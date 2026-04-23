@@ -1,12 +1,26 @@
 [
   {
-    "name": "AWS Certified Machine Learning – Specialty",
-    "issuer": "Amazon Web Services",
-    "year": "2023"
+    "name": "Tata - GenAI Powered Data Analytics",
+    "issuer": "Forage",
+    "year": "2025-12",
+    "description": "Completed a GenAI-Powered Data Analytics job simulation by Forage, gaining hands-on experience in exploratory data analysis, risk profiling, and AI-based delinquency prediction. Developed business reports and data storytelling strategies, and designed an AI-driven collections approach for financial decision-making."
   },
   {
-    "name": "Deep Learning Specialization",
-    "issuer": "Coursera",
-    "year": "2021"
+    "name": "British Airways - Data Science",
+    "issuer": "Forage",
+    "year": "2026-01",
+    "description": "Completed the British Airways Data Science Job Simulation by Forage, gaining hands-on experience in web scraping, exploratory data analysis, and predictive modeling. Analyzed customer review data to extract insights and built machine learning models to predict customer buying behavior, supporting data-driven decision-making in the aviation domain."
+  },
+  {
+    "name": "Data Science & Analytics",
+    "issuer": "Future Interns",
+    "year": "2026-03",
+    "description": "Completed a Data Science & Analytics internship with Future Interns, working on real-world business datasets to perform end-to-end data analysis and visualization. The internship involved multiple project-based tasks including data cleaning, EDA, and building interactive dashboards to extract actionable insights."
+  },
+  {
+    "name": "AI Tools Workshop",
+    "issuer": "Be10x",
+    "year": "2026-03",
+    "description": "Completed an AI Tools & ChatGPT Workshop by be10x, gaining hands-on experience in using generative AI tools to improve productivity and automate real-world tasks. Learned practical applications of AI in data analysis, content creation, coding, and presentation building."
   }
 ]

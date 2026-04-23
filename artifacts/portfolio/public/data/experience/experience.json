@@ -1,25 +1,26 @@
 [
   {
-    "role": "Senior Data Analyst",
-    "company": "Nexus Financial",
-    "location": "San Francisco, CA",
-    "start": "2022",
-    "end": "Present",
+    "role": "Data Analyst Intern",
+    "company": "Future Interns",
+    "location": "Bengaluru, Karnataka",
+    "start": "2026-02",
+    "end": "2026-03",
     "bullets": [
-      "Architected and deployed a real-time fraud detection pipeline processing 10k+ transactions per minute.",
-      "Reduced false-positive rates by 22% using advanced ensemble gradient boosting methods.",
-      "Mentored a team of 4 junior analysts in predictive modeling and best practices."
+      "Worked on real-world business datasets to perform end-to-end data analysis and visualization.",
+      "Performed data cleaning, exploratory data analysis (EDA), and built interactive dashboards to extract actionable insights.",
+      "Analyzed sales and customer datasets to identify revenue patterns, customer behavior, and category-wise performance."
     ]
   },
   {
-    "role": "Machine Learning Engineer",
-    "company": "Quantix Analytics",
-    "location": "San Jose, CA",
-    "start": "2021",
-    "end": "2022",
+    "role": "Data Analyst Intern",
+    "company": "Unified Mentor",
+    "location": "Bengaluru, Karnataka",
+    "start": "2026-01",
+    "end": "2026-07",
     "bullets": [
-      "Developed NLP models to automate customer support routing, achieving 88% classification accuracy.",
-      "Optimized SQL queries across the data warehouse, cutting average load times by 40%."
+      "Conducting data analysis and building visualizations on real-world datasets.",
+      "Developing predictive models and dashboards to support data-driven decision-making.",
+      "Collaborating with mentors on industry-oriented analytics projects."
     ]
   }
 ]

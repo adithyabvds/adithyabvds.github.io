@@ -1,6 +1,24 @@
 {
-  "programming": ["Python", "SQL", "R", "TypeScript"],
-  "tools": ["Git", "Docker", "AWS", "Snowflake"],
-  "core": ["Data Analysis", "ETL Pipelines", "Data Visualization", "Statistical Testing"],
-  "advanced": ["Machine Learning", "Deep Learning", "NLP", "Time Series Forecasting"]
+  "programming": ["Python", "R", "SQL", "JSON", "HTML", "CSS", "JavaScript", "TypeScript"],
+  "tools": ["Power BI", "Tableau", "Excel", "Linux Server", "OpenMediaVault", "DBMS", "NAS"],
+  "core": [
+    "Data Analysis",
+    "Exploratory Data Analysis (EDA)",
+    "Statistical Data Analysis",
+    "Machine Learning",
+    "Data Preprocessing",
+    "Data Mining",
+    "Data Warehousing"
+  ],
+  "advanced": [
+    "Regression Analysis",
+    "Time Series Analysis",
+    "Multivariate Analysis",
+    "Predictive Modeling",
+    "Dashboard Development",
+    "Artificial Intelligence (AI)",
+    "Prompt Engineering"
+  ],
+  "libraries": ["Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn", "PyArrow", "Statsmodels"],
+  "languages": ["English", "Hindi", "Kannada", "Tamil", "Telugu"]
 }
