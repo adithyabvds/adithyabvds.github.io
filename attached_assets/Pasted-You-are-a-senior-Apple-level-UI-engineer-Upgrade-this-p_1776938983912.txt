@@ -1,0 +1,187 @@
+You are a senior Apple-level UI engineer.
+
+Upgrade this portfolio to a premium iOS-style product using Liquid Glass design and advanced animations.
+
+---
+
+🎯 GOAL
+
+Transform the UI from basic to:
+
+* Apple iOS style
+* Liquid Glass design
+* Premium SaaS-level experience
+* Smooth and infinite-feeling animations
+
+---
+
+🎨 1. LIQUID GLASS DESIGN SYSTEM
+
+Apply modern Apple-like UI:
+
+* backdrop-filter: blur(20px)
+* semi-transparent layers
+* soft borders (rgba white 0.1–0.2)
+* glass reflections (light gradients)
+
+Cards must feel like:
+
+→ floating layers
+→ not flat blocks
+
+---
+
+✨ 2. DEPTH & LIGHTING
+
+Add:
+
+* soft shadows (not harsh)
+* inner glow
+* gradient lighting
+
+Example:
+
+* subtle blue/purple glow
+* dynamic gradient shift on hover
+
+---
+
+⚡ 3. INFINITE LOADING SYSTEM (VERY IMPORTANT)
+
+Create:
+
+1. Global loader screen
+2. Section loaders
+3. Button loading states
+
+Use:
+
+* iOS-style spinner (smooth circular motion)
+* OR dot pulse animation
+
+Loading must feel:
+
+→ infinite
+→ smooth
+→ calming
+
+iOS loading indicators are designed to signal progress while keeping the UI fluid and responsive ([Apple Developer][1])
+
+---
+
+🎬 4. ANIMATION SYSTEM (APPLE LEVEL)
+
+Use ONLY:
+
+* transform
+* opacity
+
+Add:
+
+1. Page load
+   → fade + slight upward motion
+
+2. Scroll reveal
+   → smooth section entry
+
+3. Hover
+   → scale + light glow
+
+4. Modal
+   → blur background + scale animation
+
+5. Navigation
+   → smooth transitions
+
+Animations should feel:
+
+→ natural
+→ physics-based
+→ not robotic
+
+iOS animations feel smooth because transitions guide users naturally through interactions ([Medium][2])
+
+---
+
+🧠 5. MICRO INTERACTIONS
+
+Add:
+
+* button ripple / glow
+* hover highlights
+* smooth link transitions
+* active navbar indicator
+
+---
+
+🎯 6. HERO SECTION UPGRADE
+
+Make hero:
+
+* large typography
+* bold headline
+* subtle gradient text
+* background blur/glow
+
+Add:
+
+* floating gradient blob
+* animated light effect
+
+---
+
+🧊 7. CARDS UPGRADE
+
+All cards:
+
+* rounded (16px–24px)
+* glass effect
+* hover lift (translateY)
+
+---
+
+🚀 8. PERFORMANCE RULES
+
+* NO heavy libraries
+* NO lag
+* CSS animations only
+* limit animation duration (200–300ms)
+* use will-change: transform
+
+---
+
+🎨 9. COLOR SYSTEM
+
+Use:
+
+* dark mode base
+* neon accent (blue / purple)
+* subtle gradients
+
+---
+
+⚠️ RULES
+
+* DO NOT break JSON system
+* DO NOT add backend
+* KEEP everything fast
+* NO over-animation
+
+---
+
+🎯 FINAL RESULT
+
+The site should feel like:
+
+* Apple product UI
+* Premium SaaS dashboard
+* Smooth and futuristic
+
+NOT a student portfolio
+
+---
+
+Now upgrade the entire UI system.
+
+[1]: https://developer.apple.com/design/human-interface-guidelines/progress-indicators?utm_source=chatgpt.com "Progress indicators | Apple Developer Documentation"
+[2]: https://medium.com/%40lisadziuba/animations-in-ios-30-beautiful-examples-80cb2663c559?utm_source=chatgpt.com "Animations in iOS: 30 beautiful examples | by Lisa Dziuba"
