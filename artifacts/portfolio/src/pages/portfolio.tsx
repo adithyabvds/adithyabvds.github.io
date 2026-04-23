@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { usePortfolioData } from "@/hooks/use-portfolio-data";
 import { Hero } from "@/components/sections/Hero";
 import { About } from "@/components/sections/About";
@@ -10,15 +10,48 @@ import { ResumePrint } from "@/components/ResumePrint";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
-function Loader() {
+function Loader({ loading }: { loading: boolean }) {
+  const [progress, setProgress] = useState(0);
+  
+  useEffect(() => {
+    let frameId: number;
+    let currentProgress = 0;
+    
+    const easeOutQuart = (t: number) => 1 - Math.pow(1 - t, 4);
+
+    const animate = () => {
+      // Simulate loading progress
+      if (currentProgress < 95) {
+        currentProgress += (95 - currentProgress) * 0.05;
+        setProgress(currentProgress);
+        frameId = requestAnimationFrame(animate);
+      }
+    };
+    
+    if (loading) {
+      frameId = requestAnimationFrame(animate);
+    } else {
+      setProgress(100);
+    }
+    
+    return () => cancelAnimationFrame(frameId);
+  }, [loading]);
+
   return (
     <motion.div 
       initial={{ opacity: 1 }}
       exit={{ opacity: 0, transition: { duration: 0.6, ease: "easeInOut" } }}
-      className="fixed inset-0 z-[100] flex items-center justify-center bg-background"
+      className="fixed inset-0 z-[100] flex flex-col items-center justify-center bg-background/90 backdrop-blur-md"
     >
-      <div className="ios-spinner text-primary">
+      <div className="ios-spinner text-primary mb-8">
         <div/><div/><div/><div/><div/><div/><div/><div/>
+      </div>
+      <div className="w-48 h-[1px] bg-white/10 rounded-full overflow-hidden">
+        <motion.div 
+          className="h-full bg-primary"
+          style={{ width: `${progress}%` }}
+          transition={{ duration: 0.2, ease: "linear" }}
+        />
       </div>
     </motion.div>
   );
@@ -48,7 +81,7 @@ export default function Portfolio() {
     return () => observer.disconnect();
   }, [loading]);
 
-  if (error || (!loading && !data)) {
+  if (error) {
     return <div className="min-h-screen flex items-center justify-center font-mono text-sm text-destructive">Error loading portfolio</div>;
   }
 
@@ -63,13 +96,15 @@ export default function Portfolio() {
   return (
     <div className="min-h-screen bg-background selection:bg-primary/20 overflow-x-hidden">
       <AnimatePresence>
-        {loading && <Loader />}
+        {loading && <Loader loading={loading} />}
       </AnimatePresence>
       
-      {/* Ambient background blobs */}
+      {/* Ambient background blobs and beams */}
       <div className="ambient-blob blob-1 print-hidden" />
       <div className="ambient-blob blob-2 print-hidden" />
       <div className="ambient-blob blob-3 print-hidden" />
+      <div className="light-beam print-hidden" />
+      <div className="light-beam light-beam-2 print-hidden" />
 
       {data && (
         <>
@@ -84,7 +119,7 @@ export default function Portfolio() {
               className="fixed top-6 left-1/2 -translate-x-1/2 w-full max-w-4xl px-4 z-50 pointer-events-none"
             >
               <div className="glass-pill px-6 h-14 flex items-center justify-between pointer-events-auto relative">
-                <a href="#hero" className="font-display font-bold text-lg tracking-tight hover:text-primary transition-colors z-10">
+                <a href="#hero" className="font-display font-bold text-lg tracking-tight hover:text-primary transition-colors z-10 link-underline">
                   {data.profile.name.split(' ')[0]}
                   <span className="text-primary">.</span>
                 </a>
@@ -109,10 +144,16 @@ export default function Portfolio() {
                   ))}
                   <div className="w-px h-6 bg-white/10 mx-2" />
                   <button 
-                    onClick={() => window.print()}
-                    className="glass-cta bg-primary/20 text-primary-foreground px-5 py-2 rounded-full font-medium"
+                    onClick={(e) => {
+                      const el = e.currentTarget;
+                      el.classList.remove('pulsing');
+                      void el.offsetWidth;
+                      el.classList.add('pulsing');
+                      setTimeout(() => window.print(), 200);
+                    }}
+                    className="glass-cta btn-pulse-ring bg-primary/20 text-primary-foreground px-5 py-2 rounded-full font-medium relative"
                   >
-                    Resume
+                    <span className="relative z-10">Resume</span>
                   </button>
                 </div>
 
