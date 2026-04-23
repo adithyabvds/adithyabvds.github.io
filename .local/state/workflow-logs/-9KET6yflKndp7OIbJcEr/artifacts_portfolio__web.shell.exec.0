@@ -1,0 +1,58 @@
+
+> @workspace/portfolio@0.0.0 dev /home/runner/workspace/artifacts/portfolio
+> vite --config vite.config.ts --host 0.0.0.0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J
+  [32m[1mVITE[22m v7.3.2[39m  [2mready in [0m[1m912[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m21113[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.31.80.2:[1m21113[22m/[39m
+[2m[32m  ➜[39m[22m[2m  press [22m[1mh + enter[22m[2m to show help[22m
+[RUNTIME_ERROR]{"type":"runtime-error","timestamp":1776940067213,"name":"Error","message":"projects.filter is not a function","stack":"    at ResumePrint /home/runner/workspace/artifacts/portfolio/src/components/ResumePrint.tsx:83:21\n\n\n\n\n\n\n\n\n","loc":{"line":83,"column":21,"file":"/home/runner/workspace/artifacts/portfolio/src/components/ResumePrint.tsx"},"frame":"81 |          <h2 className=\"text-lg font-bold border-b border-gray-200 pb-1 mb-3 uppercase tracking-wider text-black\">Technical Projects</h2>\n82 |          <div className=\"space-y-3\">\n83 |            {projects.filter((p: any) => p.public).map((project: any, idx: number) => (\n   |                      ^\n84 |              <div key={idx} className=\"print-avoid-break\">\n85 |                <div className=\"font-bold text-black flex items-baseline gap-2\">"}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1;1H[0J[2m10:28:16 AM[22m [36m[1m[vite][22m[39m [90m[2m(client)[22m[39m [32mhmr update [39m[2m/src/index.css, /src/pages/portfolio.tsx[22m
