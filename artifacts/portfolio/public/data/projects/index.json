@@ -1,0 +1,33 @@
+[
+  {
+    "id": "proj-1",
+    "title": "Aether: Customer Churn Predictor",
+    "role": "Lead ML Engineer",
+    "summary": "Built a predictive model to identify high-risk customers for an e-commerce client.",
+    "tech": ["Python", "XGBoost", "Pandas", "Scikit-Learn"],
+    "status": "completed",
+    "public": true,
+    "showLive": false,
+    "showGithub": true,
+    "github": "https://github.com",
+    "model": "XGBoost Classifier",
+    "analysis": "Survival analysis and feature importance mapping",
+    "dashboard": "Streamlit interactive dashboard"
+  },
+  {
+    "id": "proj-2",
+    "title": "Sentinel: Real-time Anomaly Detection",
+    "role": "Data Analyst",
+    "summary": "Real-time pipeline processing server logs to detect anomalous spikes.",
+    "tech": ["PySpark", "Kafka", "TensorFlow"],
+    "status": "in-progress",
+    "public": true,
+    "showLive": true,
+    "showGithub": true,
+    "live": "https://example.com",
+    "github": "https://github.com",
+    "model": "Autoencoders",
+    "analysis": "Time-series forecasting and spike detection",
+    "dashboard": "Grafana live monitor"
+  }
+]

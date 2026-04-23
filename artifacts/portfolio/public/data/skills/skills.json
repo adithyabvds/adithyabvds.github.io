@@ -1,0 +1,6 @@
+{
+  "programming": ["Python", "SQL", "R", "TypeScript"],
+  "tools": ["Git", "Docker", "AWS", "Snowflake"],
+  "core": ["Data Analysis", "ETL Pipelines", "Data Visualization", "Statistical Testing"],
+  "advanced": ["Machine Learning", "Deep Learning", "NLP", "Time Series Forecasting"]
+}

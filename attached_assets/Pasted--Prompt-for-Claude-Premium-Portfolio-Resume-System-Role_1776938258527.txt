@@ -1,0 +1,39 @@
+🚀 Prompt for Claude: Premium Portfolio & Resume System
+Role: Senior Frontend Engineer & UI/UX Designer
+Objective: Build a high-performance, premium personal portfolio website and an automated resume generator designed for static hosting on GitHub Pages.
+🎨 1. CORE VISUAL IDENTITIY
+Aesthetic: Modern, "Technical Minimalist," clean professional.
+Typography: Primary (Inter), Headings (Manrope - Extra Bold). Use high line-height (1.625) and tight tracking for headings.
+UI Elements:
+Glassmorphism: Navigation and cards using backdrop-filter: blur(18px), subtle white-glass backgrounds, and 1px borders.
+Colors: White background defaults, Indigo (#6366f1) for accents and primary buttons, Black for secondary.
+Cards: "Matte Cards" with smooth hover transitions (lifting and subtle scaling).
+📄 2. AUTO-RESUME GENERATOR (CRITICAL)
+Implement a generateAndPrintResume() engine that fetches JSON data and maps it to a strict, ATS-friendly A4 layout.
+Required Sections & Logic:
+Header: Centered Name (3xl bold), Role, and inline icons for Location, Email, GitHub, LinkedIn, and Kaggle.
+Summary: 2-3 lines of concise professional summary.
+Education: List degree, institution, location, and years.
+Technical Skills (Grouped): Categories: Programming, Tools, Core (Data Analysis/ML), and Advanced (Regression/Modeling).
+Experience: Role, Company, Duration, and 3-4 bullet points.
+Technical Projects: Automatically extract and format for each project:
+Model Used (from tech stack)
+Analysis Done (summary from description)
+Dashboard Created (visualization tech used)
+Certifications & Languages: Clean list format.
+Print Optimization: Use @media print to ensure a perfect A4 single-column output. Hide all web UI (navbar, buttons, etc.) and optimize fonts for black/white printing.
+🎬 3. INTERACTIVE FEATURES & ANIMATIONS
+Scroll Reveal: Use IntersectionObserver to trigger "entrance" animations for sections as the user scrolls.
+Staggering: Items in grids (skills, projects) must fade in with a 0.1s - 0.3s delay.
+Modal System: A high-performance project modal that renders different layouts for "Standard Projects" (single image/description) and "Mega Projects" (Startup showcase with product inventory).
+Routing: Simple hash-based navigation (#home, #work, #skills, #contact).
+🛠️ 4. TECHNICAL ARCHITECTURE
+Stack: Vanilla JavaScript (ESM), Tailwind CSS (via PostCSS/Vite), and HTML5.
+Data Strategy: 100% JSON-driven. Content must be fetched from a /data/ directory (e.g., /data/projects/index.json, /data/skills/skills.json).
+Deployment: Must be fully compatible with GitHub Pages (static assets, relative path handling).
+📂 5. FILE STRUCTURE GUIDANCE
+/index.html - Minimal entry point with injection containers.
+/assets/js/main.js - Logic for navigation, modal management, and the Resume engine.
+/assets/css/styles.css - Custom theme variables and print overrides.
+/data/ - Modular JSON files for every section of the site.
+Action: Please provide the full implementation code for the main.js engine, the styles.css variables/utilities, and the structural index.html to achieve this "Premium Portfolio" system.

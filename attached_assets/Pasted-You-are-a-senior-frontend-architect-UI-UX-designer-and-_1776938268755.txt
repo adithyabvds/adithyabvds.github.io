@@ -1,0 +1,263 @@
+You are a senior frontend architect, UI/UX designer, and system engineer.
+
+Your task is to build a complete, production-level, JSON-driven portfolio system with premium UI, advanced animations, resume generator, and modular architecture.
+
+This must NOT look like a template. It must look like a real product.
+
+---
+
+🎯 CORE GOAL
+
+Build a portfolio that functions as:
+
+* A personal website
+* A JSON-based CMS
+* A startup showcase system
+* An automatic resume generator
+
+All content must come from JSON files.
+
+---
+
+📁 PROJECT STRUCTURE (STRICT)
+
+portfolio/
+
+├── index.html
+├── assets/
+│   ├── css/styles.css
+│   ├── js/main.js
+│   └── images/
+├── data/
+│   ├── profile/basic.json
+│   ├── hero/hero.json
+│   ├── about/bio.json
+│   ├── education/education.json
+│   ├── experience/experience.json
+│   ├── projects/
+│   │   ├── index.json
+│   │   ├── project1.json
+│   │   ├── project2.json
+│   ├── mega_projects/
+│   │   └── sparklabs.json
+│   ├── certifications/certs.json
+│   ├── skills/skills.json
+│   ├── social/links.json
+│   └── contact/contact.json
+├── scripts/loadData.js
+
+---
+
+🧠 JSON SYSTEM (VERY IMPORTANT)
+
+Each item must support:
+
+* public (true/false)
+* showLive (true/false)
+* showGithub (true/false)
+* status (in-progress / live / prototype)
+* launched (true/false)
+
+---
+
+⚙️ RENDER SYSTEM
+
+Create functions:
+
+* renderHero()
+* renderAbout()
+* renderEducation()
+* renderExperience()
+* renderProjects()
+* renderMegaProjects()
+* renderSkills()
+* renderCertifications()
+* renderContact()
+
+All must:
+
+* Fetch JSON
+* Dynamically render
+* Handle missing data
+
+---
+
+💀 PROJECT MODAL SYSTEM
+
+When user clicks a project:
+
+* Open popup modal
+* Show:
+
+  * Title
+  * Role
+  * Description (Problem → Solution → Result)
+  * Outcome
+  * Tech stack
+  * Image
+  * Buttons:
+
+    * Source (if showGithub)
+    * Live Dashboard (if showLive)
+
+Modal must:
+
+* Close on ESC
+* Close on outside click
+* Animate (fade + scale)
+
+---
+
+🚀 MEGA PROJECT SYSTEM (STARTUP)
+
+Each mega project contains multiple products.
+
+Render:
+
+* Main startup info
+* Products list inside modal
+
+Each product supports:
+
+* name
+* tags
+* description
+* github
+* live
+* showLive
+* public
+* launched
+
+---
+
+📄 RESUME GENERATOR (CRITICAL)
+
+Create:
+
+generateResume()
+
+It must:
+
+* Fetch all JSON data
+* Generate ATS-friendly resume EXACTLY in this format:
+
+1. Header (Name, Role, Contact)
+2. Summary
+3. Education
+4. Skills (grouped)
+5. Experience (bullets)
+6. Projects (bullets)
+7. Certifications
+8. Languages
+
+---
+
+📐 RESUME RULES
+
+* Clean white background
+* Black text
+* No fancy UI
+* Use:
+  page-break-inside: avoid;
+* No content cutting across pages
+
+---
+
+🎨 UI DESIGN SYSTEM
+
+Use modern design principles:
+
+Typography:
+
+* Use Inter or Geist Sans
+* Clean hierarchy
+* Proper spacing
+
+Modern web design emphasizes typography as a core identity element, improving readability and perception ([Digidop][1])
+
+Layout:
+
+* Minimal, premium
+* SaaS-style UI
+* Proper spacing and alignment
+
+---
+
+✨ ANIMATION SYSTEM
+
+Use ONLY performant animations:
+
+* transform
+* opacity
+
+Add:
+
+* Scroll animations (IntersectionObserver)
+* Hover animations
+* Modal transitions
+
+Modern UI uses micro-animations and scroll-triggered animations to improve engagement ([Medium][2])
+
+---
+
+⚡ PERFORMANCE RULES
+
+* No heavy libraries
+* No lag
+* Use CSS animations
+* Keep under 300ms
+
+---
+
+🧠 UX IMPROVEMENTS
+
+* Minimal navbar (About, Work, Skills, Contact)
+* Smooth scrolling
+* Hover feedback
+* Clean spacing
+
+---
+
+🚫 CLEANUP
+
+Remove ALL:
+
+* “AI Studio”
+* “Gemini”
+* Any AI-generated branding
+
+---
+
+📦 OUTPUT REQUIRED
+
+Provide FULL working system:
+
+1. index.html
+2. styles.css
+3. main.js
+4. loadData.js
+5. Example JSON files
+6. Resume generator
+7. Modal system
+
+NO placeholders
+NO partial code
+
+---
+
+🎯 FINAL EXPECTATION
+
+The final system must:
+
+* Look like a premium SaaS product
+* Be fully dynamic via JSON
+* Generate resume automatically
+* Support scaling (new JSON = new content)
+* Be deployable on GitHub Pages
+
+---
+
+Build this system completely.
+
+[1]: https://www.digidop.com/blog/the-20-best-fonts-for-modern-and-impactful-website-in-2025?utm_source=chatgpt.com "20 Best Fonts for Modern and Impactful Websites in 2026"
+[2]: https://medium.com/%40watzon/25-web-design-trends-to-watch-in-2025-978f0c545684?utm_source=chatgpt.com "25 Web Design Trends to Watch in 2025"

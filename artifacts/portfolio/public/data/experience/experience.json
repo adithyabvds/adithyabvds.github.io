@@ -1,0 +1,25 @@
+[
+  {
+    "role": "Senior Data Analyst",
+    "company": "Nexus Financial",
+    "location": "San Francisco, CA",
+    "start": "2022",
+    "end": "Present",
+    "bullets": [
+      "Architected and deployed a real-time fraud detection pipeline processing 10k+ transactions per minute.",
+      "Reduced false-positive rates by 22% using advanced ensemble gradient boosting methods.",
+      "Mentored a team of 4 junior analysts in predictive modeling and best practices."
+    ]
+  },
+  {
+    "role": "Machine Learning Engineer",
+    "company": "Quantix Analytics",
+    "location": "San Jose, CA",
+    "start": "2021",
+    "end": "2022",
+    "bullets": [
+      "Developed NLP models to automate customer support routing, achieving 88% classification accuracy.",
+      "Optimized SQL queries across the data warehouse, cutting average load times by 40%."
+    ]
+  }
+]

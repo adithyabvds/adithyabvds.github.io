@@ -1,0 +1,26 @@
+{
+  "startup": {
+    "name": "SparkLabs",
+    "overview": "A specialized research lab building open-source developer tools for data scientists and ML engineers."
+  },
+  "products": [
+    {
+      "name": "DataSynth",
+      "tags": ["Open Source", "Python"],
+      "description": "A synthetic data generation library for privacy-preserving ML training.",
+      "github": "https://github.com",
+      "showGithub": true,
+      "public": true,
+      "status": "launched"
+    },
+    {
+      "name": "ModelOps",
+      "tags": ["SaaS", "React"],
+      "description": "Lightweight model monitoring dashboard for tracking drift over time.",
+      "showLive": true,
+      "live": "https://example.com",
+      "public": true,
+      "status": "beta"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "degree": "M.S. in Computer Science (Machine Learning)",
+    "institution": "Stanford University",
+    "location": "Stanford, CA",
+    "start": "2019",
+    "end": "2021",
+    "gpa": "3.9/4.0"
+  },
+  {
+    "degree": "B.S. in Mathematics",
+    "institution": "University of California, Berkeley",
+    "location": "Berkeley, CA",
+    "start": "2015",
+    "end": "2019",
+    "gpa": "3.8/4.0"
+  }
+]
