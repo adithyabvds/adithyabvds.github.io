@@ -17,9 +17,9 @@ export function Skills({ skills, certs }: { skills: any, certs: any[] }) {
         <ScrollReveal>
           <div className="flex items-center gap-4 mb-4">
             <div className="h-px bg-white/10 flex-grow max-w-[40px] print-hidden" />
-            <span className="text-sm font-medium tracking-widest text-muted-foreground uppercase">Capabilities</span>
+            <span className="text-xs font-medium tracking-widest text-muted-foreground uppercase">Capabilities</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-display font-bold tracking-tight">Expertise</h2>
+          <h2 className="text-4xl md:text-5xl font-display font-bold">Expertise</h2>
         </ScrollReveal>
       </div>
       
@@ -28,7 +28,7 @@ export function Skills({ skills, certs }: { skills: any, certs: any[] }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((cat, idx) => (
             <ScrollReveal key={cat.title} delay={idx * 0.1}>
-              <div className="glass-card p-6 md:p-8 h-full bg-white/[0.02] border-white/5 rounded-[20px]">
+              <div className="glass-card p-6 md:p-8 h-full bg-white/[0.02]">
                 <h3 className="text-lg font-bold mb-6 text-foreground tracking-tight">{cat.title}</h3>
                 <ul className="space-y-3">
                   {cat.items.map((item: string) => (
@@ -59,8 +59,8 @@ export function Skills({ skills, certs }: { skills: any, certs: any[] }) {
                 
                 return (
                   <ScrollReveal key={idx} delay={idx * 0.1}>
-                    <div className="glass-card flex flex-col h-full p-6 bg-white/[0.02] border-white/5 rounded-[20px] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_30px_-5px_rgba(120,120,255,0.1)] group relative overflow-hidden">
-                      <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 print-hidden" />
+                    <div className="glass-card flex flex-col h-full p-6 bg-white/[0.02] group relative overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 print-hidden" />
                       
                       <div className="relative z-10 flex-grow">
                         <div className="flex items-center gap-2 mb-4">

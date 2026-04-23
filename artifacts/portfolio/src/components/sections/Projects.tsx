@@ -14,9 +14,9 @@ export function Projects({ projects, sparklabs }: { projects: any[], sparklabs: 
         <ScrollReveal>
           <div className="flex items-center gap-4 mb-4">
             <div className="h-px bg-white/10 flex-grow max-w-[40px] print-hidden" />
-            <span className="text-sm font-medium tracking-widest text-muted-foreground uppercase">Selected Work</span>
+            <span className="text-xs font-medium tracking-widest text-muted-foreground uppercase">Selected Work</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-display font-bold tracking-tight">Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-display font-bold">Projects</h2>
         </ScrollReveal>
       </div>
       
@@ -24,9 +24,9 @@ export function Projects({ projects, sparklabs }: { projects: any[], sparklabs: 
       <ScrollReveal delay={0.1}>
         <div 
           onClick={() => setShowSparkLabs(true)}
-          className="glass-card cursor-pointer p-8 md:p-10 mb-12 group rounded-[22px] border border-white/5 hover:border-primary/30 transition-all duration-500 will-change-transform hover:-translate-y-1.5 hover:scale-[1.01] hover:shadow-[0_0_40px_-10px_rgba(120,120,255,0.15)]"
+          className="glass-card cursor-pointer p-8 md:p-10 mb-12 group transition-all duration-300 will-change-transform"
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-[22px] print-hidden" />
+          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 print-hidden" />
           
           <div className="relative z-10 flex flex-col md:flex-row gap-8 justify-between items-start md:items-center">
             <div className="flex-1">
@@ -59,7 +59,7 @@ export function Projects({ projects, sparklabs }: { projects: any[], sparklabs: 
             <ScrollReveal key={project.id} delay={idx * 0.1}>
               <div 
                 onClick={() => setSelectedProject(project)}
-                className="glass-card cursor-pointer h-full p-6 md:p-8 flex flex-col group rounded-[20px] border border-white/5 transition-all duration-300 will-change-transform hover:-translate-y-1.5 hover:scale-[1.02] hover:shadow-[0_0_30px_-5px_rgba(120,120,255,0.15)] overflow-hidden relative"
+                className="glass-card cursor-pointer h-full p-6 md:p-8 flex flex-col group transition-all duration-300 will-change-transform overflow-hidden relative"
               >
                 <div className="flex-grow">
                   <h4 className="text-2xl font-bold mb-3 group-hover:text-primary transition-colors line-clamp-1">{project.title}</h4>
@@ -111,11 +111,11 @@ export function Projects({ projects, sparklabs }: { projects: any[], sparklabs: 
               setShowSparkLabs(false);
             }
           }}>
-            <DialogContent className="max-w-[960px] glass-panel border-white/10 bg-[#0a0a0f]/80 backdrop-blur-[32px] text-foreground p-0 overflow-hidden shadow-[0_32px_80px_-16px_rgba(0,0,0,0.8)] sm:rounded-[24px]">
+            <DialogContent className="max-w-[960px] glass-panel border-white/10 bg-[#0a0a0f]/80 backdrop-blur-[32px] text-foreground p-0 overflow-hidden shadow-[0_32px_80px_-16px_rgba(0,0,0,0.8)] max-h-[90vh] flex flex-col">
               <DialogTitle className="sr-only">Project Details</DialogTitle>
               <DialogDescription className="sr-only">Detailed view of the selected project or initiative.</DialogDescription>
               
-              <div className="max-h-[85vh] overflow-y-auto p-6 sm:p-8 md:p-10 hide-scrollbar">
+              <div className="flex-1 overflow-y-auto p-6 sm:p-8 md:p-10 hide-scrollbar">
                 {selectedProject && (
                   <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.4, ease: "easeOut" }}>
                     <div className="flex flex-col md:flex-row gap-12">
@@ -202,7 +202,7 @@ export function Projects({ projects, sparklabs }: { projects: any[], sparklabs: 
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       {sparklabs.products.filter((p: any) => p.public).map((product: any) => (
-                        <div key={product.name} className="glass-card p-6 md:p-8 rounded-2xl bg-white/[0.02] border-white/5 flex flex-col">
+                        <div key={product.name} className="glass-card p-6 md:p-8 bg-white/[0.02] flex flex-col">
                           <div className="flex justify-between items-start mb-5">
                             <h4 className="font-bold text-2xl text-foreground">{product.name}</h4>
                             <span className={`text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider ${product.status === 'launched' ? 'bg-primary/20 text-primary border border-primary/20' : 'bg-white/5 text-muted-foreground border border-white/10'}`}>

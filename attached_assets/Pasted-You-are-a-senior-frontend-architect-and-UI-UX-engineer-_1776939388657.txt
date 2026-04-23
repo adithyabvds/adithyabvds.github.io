@@ -1,0 +1,220 @@
+You are a senior frontend architect and UI/UX engineer.
+
+Your task is to fully refine, optimize, and upgrade this portfolio into a premium, high-performance, product-level experience.
+
+---
+
+🎯 PRIMARY GOAL
+
+Transform the portfolio into:
+
+* Visually stunning
+* Perfectly aligned
+* Smooth and responsive
+* Modern (Apple / SaaS level)
+* Recruiter-ready
+
+---
+
+🧠 PART 1: LAYOUT & ALIGNMENT FIX (VERY IMPORTANT)
+
+Fix ALL alignment issues:
+
+* Ensure consistent spacing (margin & padding system)
+* Align all sections to same grid
+* Maintain consistent max-width (e.g. 1200px)
+* Fix uneven card heights
+* Ensure text alignment is consistent
+
+Use proper layout structure:
+
+* Container → Section → Grid → Card
+
+Whitespace improves readability and prevents visual overload, making content easier to scan ([The Crimson Wizard][1])
+
+---
+
+🎨 PART 2: TYPOGRAPHY SYSTEM (UPGRADE)
+
+Replace fonts with modern system:
+
+* Primary: Inter / Manrope
+* Secondary: Poppins (optional)
+
+Apply:
+
+* Headings: bold, large, strong hierarchy
+* Body: #333 color
+* Increase line-height (1.5–1.7)
+* Improve letter-spacing
+
+---
+
+🎨 PART 3: BACKGROUND & VISUAL DESIGN
+
+Upgrade background:
+
+* Use subtle gradient (dark or soft neutral)
+* Add light glow accents (blue/purple)
+* Avoid flat white background
+
+Cards:
+
+* Rounded (16px–20px)
+* Soft shadow
+* Glass effect (light blur)
+
+---
+
+✨ PART 4: PROJECT SECTION (UPGRADE)
+
+Improve project cards:
+
+Each card must include:
+
+* Title (bold)
+* Short description (2 lines max)
+* Tech badges
+* CTA: "View Details"
+
+Add:
+
+* Hover animation (lift + glow)
+* Better spacing
+* Clear hierarchy
+
+Cards should be modular and easy to scan, not overloaded with content ([The Crimson Wizard][1])
+
+---
+
+💀 PART 5: MODAL IMPROVEMENT
+
+Upgrade modal UI:
+
+* Glass effect (blur background)
+* Smooth animation (fade + scale)
+* Better structure:
+
+LEFT:
+
+* Title
+* Role
+* Overview
+
+RIGHT:
+
+* Tech stack
+* Deliverables
+
+BOTTOM:
+
+* Buttons:
+
+  * Source
+  * Live Dashboard
+
+---
+
+📜 PART 6: CERTIFICATION SECTION (IMPORTANT)
+
+Add certificate link system:
+
+JSON must include:
+
+{
+"title": "",
+"issuer": "",
+"date": "",
+"link": "",
+"public": true
+}
+
+UI must include:
+
+* Title (bold)
+* Issuer
+* Date (right aligned)
+* Button: "View Certificate"
+
+---
+
+⚡ PART 7: ANIMATION SYSTEM (OPTIMIZED)
+
+Use ONLY:
+
+* transform
+* opacity
+
+Add:
+
+1. Page load animation
+2. Scroll reveal (IntersectionObserver)
+3. Hover effects
+4. Modal transitions
+
+Animations improve engagement but must remain smooth and lightweight ([Differenz System][2])
+
+Follow rules:
+
+* Duration: 200–300ms
+* No lag
+* No heavy JS
+
+---
+
+🧠 PART 8: MICRO INTERACTIONS
+
+Add:
+
+* Button hover lift
+* Link underline animation
+* Card hover glow
+* Active navbar indicator
+
+Micro-interactions give UI personality and improve user feedback ([DesignerUp][3])
+
+---
+
+🚀 PART 9: PERFORMANCE OPTIMIZATION
+
+* No heavy libraries
+* Optimize images
+* Avoid layout shifts
+* Keep animations minimal
+
+Animations must be purposeful and not harm performance ([mightyfinedesign.co][4])
+
+---
+
+🧪 PART 10: TESTING CHECKLIST (VERY IMPORTANT)
+
+Ensure:
+
+✔ No text overflow
+✔ No broken layout
+✔ Responsive on mobile
+✔ No console errors
+✔ All buttons work
+✔ Modal opens/closes correctly
+✔ JSON loads properly
+✔ No animation lag
+
+---
+
+🎯 FINAL EXPECTATION
+
+The final result should feel like:
+
+* Apple-level UI
+* SaaS dashboard quality
+* Smooth and premium
+* Not a student template
+
+---
+
+Now fully upgrade and refine the system.
+
+[1]: https://thecrimsonwizard.com/elevate-website-design-10-ui-ux-practices/?utm_source=chatgpt.com "Elevate your Website Design with 10 UI/UX Best Practices"
+[2]: https://www.differenzsystem.com/blog/step-by-step-guide-to-web-animations/?utm_source=chatgpt.com "A Complete Guide to Web Animations: Step-by-Step"
+[3]: https://designerup.co/blog/complete-guide-to-ui-animations-micro-interactions-and-tools/?utm_source=chatgpt.com "The Complete Guide to UI Animations, Micro-Interactions ..."
+[4]: https://mightyfinedesign.co/website-animation-guide/?utm_source=chatgpt.com "Modern Website Animation: Best Practices & Examples ..."

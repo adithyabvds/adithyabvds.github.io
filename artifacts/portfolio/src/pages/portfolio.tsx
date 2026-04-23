@@ -160,7 +160,7 @@ export default function Portfolio() {
             </motion.nav>
             
             {/* Main Content */}
-            <main className="container mx-auto px-6 max-w-5xl">
+            <main className="container mx-auto px-6 max-w-6xl">
               <Hero data={data} />
               <About bio={data.bio} education={data.education} />
               <Experience experience={data.experience} />
