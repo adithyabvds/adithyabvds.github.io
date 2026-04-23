@@ -1,0 +1,21 @@
+{
+  "id": "churn-analysis",
+  "title": "Customer Retention & Churn Analysis",
+  "role": "Data Analyst",
+  "summary": "Analyzed e-commerce customer data to identify churn patterns, built a Random Forest model to predict churn, and developed an interactive Power BI dashboard.",
+  "tech": ["Python", "Machine Learning", "Random Forest", "Power BI", "Pandas"],
+  "status": "completed",
+  "enabled": true,
+  "featured": false,
+  "order": 1,
+  "visibility": "public",
+  "public": true,
+  "showLive": false,
+  "showGithub": true,
+  "showDetails": true,
+  "github": "https://github.com/adithyabvds",
+  "live": "",
+  "model": "Random Forest Classifier",
+  "analysis": "Identified churn drivers via feature importance and customer segmentation",
+  "dashboard": "Interactive Power BI dashboard"
+}

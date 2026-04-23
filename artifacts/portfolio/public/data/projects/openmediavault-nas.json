@@ -1,0 +1,21 @@
+{
+  "id": "openmediavault-nas",
+  "title": "OpenMediaVault NAS Setup",
+  "role": "System Developer",
+  "summary": "Built a Network Attached Storage (NAS) system using OpenMediaVault on a Debian-based environment, enabling centralized file storage, secure data access, and network-based file sharing. Configured services like SMB/CIFS and remote access for efficient data management.",
+  "tech": ["Linux", "OpenMediaVault", "Debian", "SMB/CIFS"],
+  "status": "completed",
+  "enabled": true,
+  "featured": false,
+  "order": 4,
+  "visibility": "public",
+  "public": true,
+  "showLive": false,
+  "showGithub": true,
+  "showDetails": true,
+  "github": "https://github.com/adithyabvds",
+  "live": "",
+  "model": "Self-hosted NAS architecture",
+  "analysis": "Designed centralized storage with secure remote access",
+  "dashboard": "OpenMediaVault admin console"
+}

@@ -1,0 +1,222 @@
+You are a senior frontend architect.
+
+Convert this portfolio into a fully JSON-driven system (no backend required).
+
+⚠️ CRITICAL RULE (DO NOT BREAK THIS)
+
+* DO NOT change existing UI design
+* DO NOT modify layout, spacing, animations, or styling
+* DO NOT rewrite CSS unless absolutely necessary
+* DO NOT remove any existing components
+* ONLY connect data layer (JSON) to existing UI
+
+UI = FINAL
+ONLY DATA SYSTEM = CHANGE
+
+---
+
+🎯 GOAL
+
+Turn JSON files into a "database-like system" where:
+
+* Adding a new JSON file = new content appears automatically
+* No hardcoded content anywhere
+* Entire website driven by JSON
+* Behaves like a mini CMS
+
+---
+
+📂 STRUCTURE (STRICT)
+
+portfolio/
+
+├── index.html
+├── assets/
+│   ├── css/styles.css
+│   ├── js/main.js
+│   └── images/
+├── data/
+│   ├── profile/basic.json
+│   ├── hero/hero.json
+│   ├── about/bio.json
+│   ├── education/education.json
+│   ├── experience/experience.json
+│   ├── projects/
+│   │   ├── index.json
+│   │   ├── project1.json
+│   │   ├── project2.json
+│   ├── mega_projects/
+│   │   └── sparklabs.json
+│   ├── certifications/certs.json
+│   ├── skills/skills.json
+│   ├── social/links.json
+│   └── contact/contact.json
+├── scripts/loadData.js
+
+---
+
+⚙️ CORE SYSTEM
+
+1. Dynamic Loader System
+
+Create loadData.js:
+
+* Fetch JSON files dynamically
+* Combine into one structured object
+* Cache results (avoid repeated fetch)
+* Handle missing files gracefully
+
+Example:
+
+loadData("projects")
+
+---
+
+2. AUTO DISCOVERY (MANDATORY)
+
+* NEVER hardcode project files
+* ALWAYS use index.json
+
+Example:
+
+{
+"projects": [
+"project1.json",
+"project2.json"
+]
+}
+
+Loop and fetch dynamically.
+
+---
+
+3. UNIVERSAL RENDER SYSTEM
+
+Create reusable functions:
+
+* renderProjects(data)
+* renderMegaProjects(data)
+* renderSkills(data)
+* renderCertifications(data)
+
+⚠️ These must:
+
+* Use existing UI containers
+* NOT create new layout
+* Only inject content
+
+---
+
+4. JSON CONTROL SYSTEM
+
+Each JSON supports:
+
+{
+"enabled": true,
+"featured": false,
+"order": 1,
+"tags": [],
+"visibility": "public"
+}
+
+Rules:
+
+* enabled=false → do not render
+* visibility=private → hide
+* order → sort ascending
+* featured → highlight using existing UI
+
+---
+
+5. BUTTON CONTROL SYSTEM
+
+Each project JSON must support:
+
+{
+"showGithub": true,
+"showLive": true,
+"showDetails": true
+}
+
+Buttons render ONLY if true.
+
+---
+
+6. MODULAR SAFE LOADING
+
+* Each section loads independently
+* If JSON missing → skip silently
+* DO NOT break page
+
+---
+
+7. PERFORMANCE OPTIMIZATION
+
+* Cache JSON in memory
+* Lazy load sections when visible
+* Avoid duplicate API calls
+
+---
+
+8. AUTO UPDATE SYSTEM
+
+When I add:
+
+data/projects/newProject.json
+
+AND update index.json
+
+→ Project MUST appear automatically
+
+NO CODE CHANGE
+
+---
+
+9. STRICT UI BINDING RULE
+
+* DO NOT create new UI components
+* DO NOT redesign cards
+* DO NOT modify animations
+* DO NOT change fonts/colors
+
+ONLY bind JSON → existing HTML
+
+---
+
+10. ERROR HANDLING
+
+* If JSON invalid → log error, skip
+* If field missing → use fallback value
+* NEVER crash UI
+
+---
+
+🧠 ARCHITECTURE PRINCIPLE
+
+Follow headless CMS pattern:
+
+* JSON = content layer
+* UI = presentation layer
+* Fully decoupled system
+
+---
+
+🎯 FINAL RESULT
+
+* Works like CMS
+* Fully scalable
+* Add/edit JSON → auto update UI
+* Clean, maintainable, modular
+
+---
+
+DO NOT:
+
+* Hardcode content
+* Break UI
+* Change CSS unnecessarily
+* Rewrite structure
+
+---
+
+Build production-ready code.

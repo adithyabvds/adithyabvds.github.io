@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
+import { loadAllPortfolioData } from "@/lib/loadData";
 
 export function usePortfolioData() {
   const [data, setData] = useState<any>(null);
@@ -6,39 +7,23 @@ export function usePortfolioData() {
   const [error, setError] = useState<Error | null>(null);
 
   useEffect(() => {
-    async function fetchData() {
+    let cancelled = false;
+    (async () => {
       try {
-        const basePath = import.meta.env.BASE_URL;
-        
-        const [
-          profile, hero, bio, education, experience, 
-          projects, sparklabs, skills, certs, contact
-        ] = await Promise.all([
-          fetch(`${basePath}data/profile/basic.json`).then(res => res.json()),
-          fetch(`${basePath}data/hero/hero.json`).then(res => res.json()),
-          fetch(`${basePath}data/about/bio.json`).then(res => res.json()),
-          fetch(`${basePath}data/education/education.json`).then(res => res.json()),
-          fetch(`${basePath}data/experience/experience.json`).then(res => res.json()),
-          fetch(`${basePath}data/projects/index.json`).then(res => res.json()),
-          fetch(`${basePath}data/mega_projects/sparklabs.json`).then(res => res.json()),
-          fetch(`${basePath}data/skills/skills.json`).then(res => res.json()),
-          fetch(`${basePath}data/certifications/certs.json`).then(res => res.json()),
-          fetch(`${basePath}data/contact/contact.json`).then(res => res.json()),
-        ]);
-
-        setData({
-          profile, hero, bio, education, experience, 
-          projects, sparklabs, skills, certs, contact
-        });
+        const result = await loadAllPortfolioData();
+        if (!cancelled) setData(result);
       } catch (err) {
-        console.error('Failed to fetch portfolio data:', err);
-        setError(err instanceof Error ? err : new Error('Failed to fetch data'));
+        if (!cancelled) {
+          console.error("Failed to fetch portfolio data:", err);
+          setError(err instanceof Error ? err : new Error("Failed to fetch data"));
+        }
       } finally {
-        setLoading(false);
+        if (!cancelled) setLoading(false);
       }
-    }
-
-    fetchData();
+    })();
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   return { data, loading, error };

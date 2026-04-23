@@ -1,0 +1,21 @@
+{
+  "id": "retail-sales",
+  "title": "Retail Sales Performance Analytics",
+  "role": "Data Analyst",
+  "summary": "Focused on extracting meaningful insights from real-world retail datasets and presenting them through effective visualizations. Conducted EDA to understand patterns and correlations.",
+  "tech": ["Python", "Pandas", "Matplotlib", "Seaborn", "Power BI"],
+  "status": "completed",
+  "enabled": true,
+  "featured": false,
+  "order": 3,
+  "visibility": "public",
+  "public": true,
+  "showLive": false,
+  "showGithub": true,
+  "showDetails": true,
+  "github": "https://github.com/adithyabvds",
+  "live": "",
+  "model": "Exploratory Data Analysis & correlation modeling",
+  "analysis": "Uncovered seasonal trends, top-performing categories, and revenue drivers",
+  "dashboard": "Sales performance dashboard"
+}
